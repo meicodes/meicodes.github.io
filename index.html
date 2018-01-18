@@ -10,19 +10,37 @@
 <body>
 
   <div class="container-fluid">
+
     <div class="row">
       <div class="col-md-3">
-        navigation
+        <h1>made by mei.</h1>
+        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+          <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</a>
+          <a class="nav-link" id="v-pills-projects-tab" data-toggle="pill" href="#v-pills-projects" role="tab" aria-controls="v-pills-projects" aria-selected="false">projects</a>
+          <a class="nav-link" id="v-pills-resume-tab" data-toggle="pill" href="#v-pills-resume" role="tab" aria-controls="v-pills-resume" aria-selected="false">resume</a>
+          <a class="nav-link" id="v-pills-contact-tab" data-toggle="pill" href="#v-pills-contact" role="tab" aria-controls="v-pills-contact" aria-selected="false">contact</a>
+        </div>
+
       </div>
       <div class="col-md">
-        main content
+        <div class="main-cont">
+          <div id="back-home"></div>
+          <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">...</div>
+            <div class="tab-pane fade" id="v-pills-projects" role="tabpanel" aria-labelledby="v-pills-projects-tab">...</div>
+            <div class="tab-pane fade" id="v-pills-resume" role="tabpanel" aria-labelledby="v-pills-resume-tab">...</div>
+            <div class="tab-pane fade" id="v-pills-contact" role="tabpanel" aria-labelledby="v-pills-contact-tab">...</div>
+          </div>
+        </div>
       </div>
     </div>
+
     <div class="row">
       <div class="col-md fixed-bottom">
-        footer
+        copyright info goes here
       </div>
     </div>
+
   </div>
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
