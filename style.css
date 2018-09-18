@@ -1,0 +1,55 @@
+body {
+    background: #f2f2f2;
+    padding: calc(25vh - 51px) 190px;
+}
+
+a, a:hover {
+    color: #212529;
+}
+
+h1 {
+    font: italic 45px Roboto;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font: italic 25px Roboto;
+    text-transform: uppercase;
+    display: inline;
+}
+
+.container-fluid {
+    background: #fff;
+    padding: 50px;
+    border: solid 1px #dadada;
+}
+
+#sidebar {
+    border-right: solid 1px #dadada;
+    min-height: 50vh;
+}
+
+.nav-pills .nav-link {
+    font: 20px Roboto Mono;
+    margin: .5rem 1rem .5rem 0;
+    border-radius: 0;
+    padding: 0 0 9px;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background: transparent;
+    color: #212529;
+}
+
+.nav-link.active {
+    border-bottom: solid 4px #7db8bf;
+}
+
+#main-cont {
+    margin: 50px 0;
+}
+
+.tab-pane {
+    font: 25px Karla;
+}
