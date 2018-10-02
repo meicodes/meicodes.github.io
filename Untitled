@@ -1,0 +1,32 @@
+def isort(list)
+    n = list.size
+
+    for i in 0..n do
+        k = 1
+        m = 2
+
+        for j in 2..i do
+            if list[j] > list[k] then
+                k = j
+            elsif list[j] > list[m] then
+                m = j
+            end
+        end
+
+        swap(k, i, list)
+        swap(m, i - 1, list)
+    end
+
+    return list
+end
+
+def swap (a, b, list)
+    temp = list[a]
+    list[a] = list[b]
+    list[b] = temp
+end
+
+
+list = [7, 12, 13, 1, 3, 2, 9]
+
+isort(list)

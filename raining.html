@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Roboto+Mono|Roboto:900,900i|Playfair+Display:400,400italic,700,700italic" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <h1>Mei's Weather App</h1>
+                <h2 id="date"></h2>
+                <h3 id="geoloc"></h3>
+                <p id='temp'>
+                    <span class="f"></span>
+                    <span class="c hide"></span>
+                </p>
+                <div id="icon"></div>
+            </div>
+
+            <div class="col-md-6">
+                <div id="map"></div>
+            </div>
+
+        </div>
+
+    </div>
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 8
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChthSM6NrkKdc2_KkgOlbMGTKeBw2mZPQ&callback=initMap" async defer></script>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Geolocation/1.0.50/jquery.geolocation.min.js" charset="utf-8"></script>
+    <script src="raining.js" charset="utf-8"></script>
+</body>
+
+</html>

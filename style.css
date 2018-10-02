@@ -1,16 +1,17 @@
 body {
     background: #f2f2f2;
-    padding: calc(25vh - 51px) 190px;
+    overflow: hidden;
+    font: 25px inconsolata;
 }
 
 a, a:hover {
-    color: #212529;
+    color: inherit;
 }
 
 h1 {
-    font: italic 45px Roboto;
-    text-transform: uppercase;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+    font: italic bold 50px Playfair display;
+    text-transform: lowercase;
 }
 
 h3 {
@@ -19,19 +20,38 @@ h3 {
     display: inline;
 }
 
+h5 {
+    font: italic 22px Roboto;
+    text-transform: uppercase;
+}
+
 .container-fluid {
     background: #fff;
-    padding: 50px;
     border: solid 1px #dadada;
 }
 
+.row {
+    margin-right: -16px;
+    margin-left: -16px;
+}
+
 #sidebar {
-    border-right: solid 1px #dadada;
-    min-height: 50vh;
+    background-color: #000;
+    height: 100vh;
+    color: #fff;
+    margin-left: -1px;
+    padding: 100px 30px 30px;
+}
+
+.col-md-9 {
+    background-color: #f5f5f5;
+    /* background-image: url(https://images.unsplash.com/photo-1518043647833-3c0c5da3360f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e4ca6f099122b6c0eba295fa002b24f5&dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb); */
+    padding: 0;
 }
 
 .nav-pills .nav-link {
-    font: 20px Roboto Mono;
+    font: 14px Inconsolata;
+    text-transform: uppercase;
     margin: .5rem 1rem .5rem 0;
     border-radius: 0;
     padding: 0 0 9px;
@@ -39,17 +59,69 @@ h3 {
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
     background: transparent;
-    color: #212529;
 }
 
-.nav-link.active {
-    border-bottom: solid 4px #7db8bf;
+.nav-pills .nav-link.active {
+    color: #ccde1c;
 }
 
-#main-cont {
-    margin: 50px 0;
+.nav .material-icons {
+    font-size: 16px;
+    margin: 0px 10px 0 0;
+    position: relative;
+    top: 3px;
 }
+
+#main-cont {}
 
 .tab-pane {
-    font: 25px Karla;
+    font: 25px inconsolata;
+}
+
+#v-pills-home {
+    width: 600px;
+    margin: 32vh auto;
+    text-align: justify;
+    font: 25px inconsolata;
+    text-transform: lowercase;
+    border-bottom: solid 5px;
+    padding-bottom: 25px;
+}
+
+#v-pills-projects {
+    margin: 100px;
+}
+
+hr {
+    margin: 50px;
+}
+
+#v-pills-resume {
+    margin: 100px;
+}
+
+#v-pills-resume iframe {
+    width: 100%;
+    height: calc(100vh - 252px);
+}
+
+.hide {display: none;}
+
+#temp a {
+  color: blue;
+}
+
+#map {
+    height: 100vh;
+}
+
+
+#footer {
+    padding: 20px 0 20px 25vw;
+    text-align: center;
+    background: #000;
+    color: #fff;
+    font: 10px inconsolata;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
