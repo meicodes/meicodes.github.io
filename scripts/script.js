@@ -73,10 +73,10 @@ function getDate() {
 
 function getWeather(lat, lon) {
     var noResponse = ["nah, you're good!", "nope! have a nice day!", "negative. leave the umbrella at home."];
-    var yesResponse = ["yep.", "yeah.", "better bring an umbrella!"]
+    var yesResponse = ["yep.", "yeah.", "positive. better bring an umbrella!"]
     var laterResponse = ["not right now. but it might 👀", "no, but it's coming."];
     var apiKey = "ec2ae657cf8282becb2d48fc4b8bbc27";
-    var url = "http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&APPID=" + apiKey + "&units=imperial";
+    var url = "https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&APPID=" + apiKey + "&units=imperial";
     var icons = new Map();
 
     icons.set("Rain", "rain");
