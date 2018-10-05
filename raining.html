@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>is it raining?</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Roboto+Mono|Roboto:900,900i|Playfair+Display:400,400italic,700,700italic" rel="stylesheet">
@@ -11,10 +11,10 @@
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div id="raining" class="container-fluid">
         <div class="row">
-            <div class="col-md-6">
-                <h1>Mei's Weather App</h1>
+            <div class="col-md-6 map-info-cont">
+                <h1>is it raining?</h1>
                 <h2 id="date"></h2>
                 <h3 id="geoloc"></h3>
                 <p id='temp'>
@@ -24,7 +24,7 @@
                 <div id="icon"></div>
             </div>
 
-            <div class="col-md-6">
+            <div class="col-md-6 map-cont">
                 <div id="map"></div>
             </div>
 
